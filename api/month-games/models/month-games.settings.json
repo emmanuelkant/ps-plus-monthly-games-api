@@ -12,8 +12,7 @@
   },
   "attributes": {
     "games": {
-      "collection": "game",
-      "via": "month_game"
+      "collection": "game"
     },
     "Announcement": {
       "type": "date",

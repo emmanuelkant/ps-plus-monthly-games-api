@@ -35,10 +35,6 @@
       ],
       "default": "PS4",
       "required": true
-    },
-    "month_game": {
-      "via": "games",
-      "model": "month-games"
     }
   }
 }
