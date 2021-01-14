@@ -32,16 +32,6 @@
     "Link": {
       "type": "string",
       "required": true
-    },
-    "Announcement_temp": {
-      "type": "integer",
-      "required": true,
-      "unique": true
-    },
-    "Release_temp": {
-      "type": "integer",
-      "required": true,
-      "unique": true
     }
   }
 }
