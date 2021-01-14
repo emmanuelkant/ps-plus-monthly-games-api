@@ -1,3 +1,3 @@
-# Strapi application
+# API to PS Plus Monthly Games
 
-A quick description of your strapi application
+This is my project that is hosted in Heroku for serving any front-end purposes.

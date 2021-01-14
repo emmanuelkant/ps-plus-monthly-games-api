@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "Game"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Platform": {
+      "type": "enumeration",
+      "enum": [
+        "PS4",
+        "PS5"
+      ],
+      "default": "PS4",
+      "required": true
+    },
+    "month_game": {
+      "via": "games",
+      "model": "month-games"
+    }
+  }
+}

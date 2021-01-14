@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/month-games",
+      "handler": "month-games.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/month-games/count",
+      "handler": "month-games.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/month-games/:id",
+      "handler": "month-games.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/month-games",
+      "handler": "month-games.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/month-games/:id",
+      "handler": "month-games.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/month-games/:id",
+      "handler": "month-games.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
