@@ -14,21 +14,21 @@
     "games": {
       "collection": "game"
     },
-    "Announcement": {
+    "announcement": {
       "type": "date",
       "required": false,
       "unique": false
     },
-    "Release": {
+    "release": {
       "type": "date",
       "required": false,
       "unique": false
     },
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Link": {
+    "link": {
       "type": "string",
       "required": true
     }
