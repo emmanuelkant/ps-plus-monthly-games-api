@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/month-games-push",
+      "handler": "month-games.pushNotification",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

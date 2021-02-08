@@ -5,4 +5,8 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  pushNotification: async (ctx) => {
+    return strapi.services['month-games'].newMonthlyGamesPush();
+  }
+};
