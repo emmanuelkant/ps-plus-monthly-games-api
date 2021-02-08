@@ -49,7 +49,7 @@
       }
     },
     {
-      "method": "GET",
+      "method": "POST",
       "path": "/month-games-push",
       "handler": "month-games.pushNotification",
       "config": {
