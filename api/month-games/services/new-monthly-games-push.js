@@ -11,7 +11,7 @@ const expoAPI = axios.create({
 });
 
 const newMonthlyGamesPush = async ({
-  title = 'The new PS Plus Monthly Games already came out',
+  title = 'The PS Plus already came out 🎮',
   body = 'Click here to know which are they'
 }) => {
   const message = {
