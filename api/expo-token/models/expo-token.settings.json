@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expo_tokens",
+  "info": {
+    "name": "Expo Token"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "token": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

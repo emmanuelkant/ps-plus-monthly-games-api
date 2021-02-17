@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/expo-tokens",
+      "handler": "expo-token.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/expo-tokens/count",
+      "handler": "expo-token.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/expo-tokens/:id",
+      "handler": "expo-token.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/expo-tokens",
+      "handler": "expo-token.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/expo-tokens/:id",
+      "handler": "expo-token.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/expo-tokens/:id",
+      "handler": "expo-token.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/expo-tokens-push",
+      "handler": "expo-token.pushNotification",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
