@@ -7,9 +7,16 @@
 
 module.exports = {
   pushNotification: async ctx => {
-    const { request } = ctx;
-    
-    await strapi.services['expo-token'].newMonthlyGamesPush(request.body);
+    const { request = {} } = ctx;
+    const { body = {}, header } = request;
+    const { model } = body
+
+    if (model === 'month-games') {
+      console.info('Start push notifications');
+      await strapi.services['expo-token'].newMonthlyGamesPush(header);
+      console.info('Finished push notifications');
+    }
+
     ctx.send('Finished');
   }
 };

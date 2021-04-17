@@ -15,16 +15,16 @@ const sleep = ms => {
 };
 
 const newMonthlyGamesPush = async ({
-  title = 'The PS Plus already came out 🎮',
-  body = 'Click here to know which are they'
+  pushTitle = 'The PS Plus already came out 🎮',
+  pushBody = 'Click here to know which are they'
 }) => {
   const result = await strapi.services['expo-token'].find();
 
   const message = {
     to: process.env.EXPO_PUSH_TOKEN,
     sound: 'default',
-    title,
-    body,
+    title: pushTitle,
+    body: pushBody,
     data: {},
   };
 
